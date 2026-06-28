@@ -1,3 +1,11 @@
+CREATE TABLE Usuario (
+    id_usuario SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    telefone VARCHAR(20),
+    idade INT NOT NULL
+);
+
 CREATE TABLE Colaborador (
     id_colaborador SERIAL PRIMARY KEY,
     id_usuario INT NOT NULL UNIQUE,
